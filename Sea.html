@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="BS-Workshop/css/bootstrap.css">
+    <script src="BS-Workshop/js/bootstrap.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทะเลที่น่าไปในประเทศไทย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family: "IBM Plex Sans Thai Looped", sans-serif;
+      }
+      .lfHrlP {
+        margin: 12px auto auto;
+        max-width: 450px;
+        font-size: 16px;
+        }
+      * {
+        box-sizing: border-box;
+        }
+      .lfHrlP{
+        margin-bottom: 1.5rem !important;
+      }
+      p{
+        align-self: start;
+      }
+      body{
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          color: #333;
+      }
+      .nav-link:hover {
+      color: rgb(29, 44, 180) !important;
+      }
+      .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px);
+            min-width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            margin: 10px 0;
+            padding: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+  <header class="p-3 text-bg-info">  
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16">
+            <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+            <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+          </svg>
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0  ">
+            <li><a href="index.html" class="nav-link px-2 text-dark">Home</a></li>
+            <li><a href="Sea.html" class="nav-link px-2 text-dark">Sea</a></li>
+            <li><a href="plan.html" class="nav-link px-2 text-dark">วางแพลน</a></li>
+            <li><a href="aboutMe.html" class="nav-link px-2 text-dark">ติดต่อเรา</a></li>
+          </ul>   
+        </ul>   
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Search</button>
+        </div>
+      </div>
+    </div>
+</header>
+  <!--ส่วนของรูปภาพ-->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1.gif" class="d-block w-100" alt="หมู่เกาะกำ-ระนอง">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.gif" class="d-block w-100" alt="เกาะแสมสาร-ชลบุรี">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.gif" class="d-block w-100" alt="อ่าวหินวง-เกาะเต่า">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br> <br>
+  <hr>
+  <br>
+  <!--จบส่วนของรูปภาพ-->
+  <section class="hero bg-light text-center p-5">
+        <div class="container">
+          <h1 class="display-4">แนะนำทะเลในประเทศไทย 15 สถานที่</h1>
+        </div>
+        </section>
+
+          <section id="popular" class="container my-5" >
+
+          <div class="row">
+          <!-- 1 เกาะสมุย -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="img/KohSamui.jpeg" class="card-img-top" alt="เกาะสมุย">
+                  <div class="card-body">
+                      <h5 class="card-title">เกาะสมุย (Koh Samui)</h5>
+                      <p class="card-text">คำแนะนำ: หนึ่งในเกาะยอดนิยมที่สุด มีชายหาดสวยงามและบริการท่องเที่ยวครบครัน</p>
+                      <a href="https://www.traveloka.com/th-th/explore/destination/10-review-places-samui/140485" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                  </div>
+              </div>
+          </div>
+          <!-- 2 เกาะพีพี -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/KohPhiPhi.jpg" class="card-img-top" alt="เกาะพีพี">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะพีพี (Koh Phi Phi)</h5>
+                    <p class="card-text">เกาะกลางทะเลที่มีธรรมชาติที่งดงาม ทั้งหาดทรายขาวและน้ำทะเลใส</p>
+                    <a href="https://www.ticket2attraction.com/th/blogs/phi-phi-attractions/?srsltid=AfmBOooA2R3lsnvckBiRDgz9clxJaI_DMO0afNgISXew75Ys6zk49fiH" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                  </div>
+              </div>
+          </div>
+          <!-- 3 เกาะหลีเป๊ะ -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="img/KohLipe.jpg" class="card-img-top" alt="เกาะหลีเป๊ะ">
+                  <div class="card-body">
+                      <h5 class="card-title">เกาะหลีเป๊ะ (Koh Lipe)</h5>
+                      <p class="card-text">คำแนะนำ: สวรรค์ของนักท่องเที่ยวที่ชื่นชอบการดำน้ำ และความเงียบสงบ</p>
+                      <a href="https://www.ananyalipe.com/koh-lipe-travel-guide/" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+       <!-- 4 เกาะช้าง -->
+      <section id="popular" class="container my-5">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohChang.jpg" class="card-img-top" alt="เกาะช้าง">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะช้าง (Koh Chang)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะใหญ่ในภาคตะวันออกที่มีทั้งทะเล น้ำตก และป่าชายเลน</p>
+                    <a href="https://th.trip.com/travel-guide/destination/koh-chang-128607/" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 5 เกาะเสม็ด (Koh Samet) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohSamet.jpg" class="card-img-top" alt="เกาะเสม็ด">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะเสม็ด (Koh Samet)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะยอดนิยมที่สามารถเดินทางได้ง่ายจากกรุงเทพฯ</p>
+                    <a href="https://www.klook.com/th/blog/10-places-to-visit-in-samed-island/" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 6 เกาะเต่า (Koh Tao) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohTao.jpg" class="card-img-top" alt="เกาะเต่า">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะเต่า (Koh Tao)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะที่มีชื่อเสียงในการดำน้ำลึก ทั้งนักดำน้ำมือใหม่และมืออาชีพ</p>
+                    <a href="https://travel.trueid.net/detail/7pQZWKa0YGy" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- 7 เกาะพะงัน -->
+      <section id="popular" class="container my-5">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohPhangan.jpg" class="card-img-top" alt="เกาะพะงัน">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะพะงัน (Koh Phangan)</h5>
+                    <p class="card-text">คำแนะนำ: หนึ่งในเกาะยอดนิยมที่สุด มีชายหาดสวยงามและบริการท่องเที่ยวครบครัน</p>
+                    <a href="https://th.trip.com/moments/koh-phangan-2010890/" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 8 ภูเก็ต (Phuket) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/Phuket.jpg" class="card-img-top" alt="ภูเก็ต">
+                <div class="card-body">
+                    <h5 class="card-title">ภูเก็ต (Phuket)</h5>
+                    <p class="card-text">คำแนะนำ: แหล่งท่องเที่ยวระดับโลกที่มีทั้งชายหาดสวยงามและสถานบันเทิงครบครัน</p>
+                    <a href="https://www.traveloka.com/th-th/explore/destination/25-places-to-travel-phuket/101382" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 9 เกาะล้าน (Koh Larn) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohLarn.jpg" class="card-img-top" alt="เกาะล้าน">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะล้าน (Koh Larn)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะเล็กใกล้พัทยา มีหาดสวยงามและน้ำใสเหมาะสำหรับการพักผ่อน</p>
+                    <a href="https://www.wongnai.com/trips/what-to-do-in-koh-larn" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <!-- 10 เกาะลันตา (Koh Lanta) -->
+      <section id="popular" class="container my-5">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohLanta.jpg" class="card-img-top" alt="เกาะลันตา">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะลันตา (Koh Lanta)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะที่เงียบสงบในจังหวัดกระบี่ เหมาะสำหรับการพักผ่อน
+                      กิจกรรม: พักผ่อนริมทะเล, ดำน้ำตื้น, เดินป่า</p>
+                    <a href="https://travel.trueid.net/detail/b9lVVyLrBNno" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 11 หมู่เกาะสิมิลัน (Similan Islands) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/SimilanIslands.jpg" class="card-img-top" alt="หมู่เกาะสิมิลัน">
+                <div class="card-body">
+                    <h5 class="card-title">หมู่เกาะสิมิลัน (Similan Islands)</h5>
+                    <p class="card-text">คำแนะนำ: หมู่เกาะที่ขึ้นชื่อด้านการดำน้ำที่สวยที่สุดในโลก</p>
+                    <a href="https://travel.trueid.net/detail/Kpj9EoWm4z5" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 12 หมู่เกาะสุรินทร์ (Surin Islands) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/SurinIslands.jpg" class="card-img-top" alt="หมู่เกาะสุรินทร์">
+                <div class="card-body">
+                    <h5 class="card-title">หมู่เกาะสุรินทร์ (Surin Islands)</h5>
+                    <p class="card-text">คำแนะนำ: แหล่งดำน้ำที่มีปะการังและสัตว์ทะเลที่สมบูรณ์แบบ</p>
+                    <a href="https://www.thaipbs.or.th/news/content/334483" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- 13  เกาะตะรุเตา (Koh Tarutao) -->
+      <section id="popular" class="container my-5">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohTarutao.jpeg" class="card-img-top" alt="เกาะตะรุเตา">
+                <div class="card-body">
+                    <h5 class="card-title"> เกาะตะรุเตา (Koh Tarutao)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะที่มีประวัติศาสตร์และธรรมชาติอันสมบูรณ์ เป็นอุทยานแห่งชาติ</p>
+                    <a href="https://thai.tourismthailand.org/Articles/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B1%E0%B8%94-%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%87%E0%B8%97%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7-%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%95%E0%B8%B0%E0%B8%A3%E0%B8%B8%E0%B9%80%E0%B8%95%E0%B8%B2" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 14 เกาะกูด (Koh Kood) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/KohKood.jpeg" class="card-img-top" alt="เกาะกูด">
+                <div class="card-body">
+                    <h5 class="card-title">เกาะกูด (Koh Kood)</h5>
+                    <p class="card-text">คำแนะนำ: เกาะที่ยังคงความเป็นธรรมชาติและเงียบสงบ เหมาะสำหรับคนที่ต้องการพักผ่อน</p>
+                    <a href="https://th.trip.com/hot/articles/%E0%B8%95%E0%B8%B0%E0%B8%A5%E0%B8%B8%E0%B8%A2+%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%B0%E0%B8%81%E0%B8%B9%E0%B8%94+%E0%B8%AB%E0%B8%B2%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%AA%E0%B9%83%E0%B8%99%E0%B8%87%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A2%E0%B8%B1%E0%B8%94.html" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+        <!-- 15 หาดป่าตอง (Patong Beach) -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/PatongBeach.jpeg" class="card-img-top" alt="หาดป่าตอง">
+                <div class="card-body">
+                    <h5 class="card-title">หาดป่าตอง (Patong Beach)</h5>
+                    <p class="card-text">คำแนะนำ: ชายหาดชื่อดังในภูเก็ตที่คึกคักทั้งวันทั้งคืน</p>
+                    <a href="https://travel.trueid.net/detail/rWgkvKAQlZMW" class="btn btn-outline-primary">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!--ส่วนท้าย-->
+      <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-body-secondary">© 2024</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-secondary-emphasis">Home</a></li>
+              <li class="nav-item mb-2"><a href="Sea.html" class="nav-link p-0 text-secondary-emphasis">Sea</a></li>
+              <li class="nav-item mb-2"><a href="plan.html" class="nav-link p-0 text-secondary-emphasis">วางแพลน</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="aboutMe.html" class="nav-link p-0 text-body-secondary">ติดต่อเรา</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <!--จบส่วนท้าย-->
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="BS-Workshop/css/bootstrap.css">
+    <script src="BS-Workshop/js/bootstrap.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทะเลที่น่าไปในประเทศไทย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family: "IBM Plex Sans Thai Looped", sans-serif;
+      }
+      .lfHrlP {
+        margin: 12px auto auto;
+        max-width: 450px;
+        font-size: 16px;
+        }
+      * {
+        box-sizing: border-box;
+        }
+      .lfHrlP{
+        margin-bottom: 1.5rem !important;
+        background-color: rgb(160, 217, 255);
+        color: black;
+      }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-decoration: none;
+        }
+        .destination {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 20px);
+            min-width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            margin: 10px 0;
+            padding: 0 15px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .nav-link:hover {
+        color: rgb(22, 162, 204)  !important;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <!--ส่วนหัวของเว็บ-->
+    <header class="p-3 text-bg-info">  
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16">
+                <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+                <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+              </svg>
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0  ">
+                <li><a href="1Home.html" class="nav-link px-2 text-dark">Home</a></li>
+                <li><a href="2Sea.html" class="nav-link px-2 text-dark">Sea</a></li>
+                <li><a href="4plan.html" class="nav-link px-2 text-dark">วางแพลน</a></li>
+                <li><a href="5aboutMe.html" class="nav-link px-2 text-dark">ติดต่อเรา</a></li>
+              </ul>   
+            </ul>   
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Search</button>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!--จบส่วนของหัว-->
+
+    <!--ส่วนของรูปภาพ-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.gif" class="d-block w-100" alt="หมู่เกาะกำ-ระนอง">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.gif" class="d-block w-100" alt="เกาะแสมสาร-ชลบุรี">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.gif" class="d-block w-100" alt="อ่าวหินวง-เกาะเต่า">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br> <br>
+    <hr>
+    <br>
+    <!--จบส่วนของรูปภาพ-->
+    
+    <h2><center>Highlights</center></h2>
+
+    <div class="container">
+      <div class="destination">
+          <div class="card">
+              <img src="img/KohSamui.jpeg" alt="เกาะสมุย">
+              <h3>เกาะสมุย</h3>
+              <p>หนึ่งในเกาะยอดนิยมที่สุด มีชายหาดสวยงามและบริการท่องเที่ยวครบครัน</p>
+              <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+          </div>
+          <div class="card">
+            <img src="img/KohPhiPhi.jpg" alt="เกาะพีพี">
+            <h3>เกาะพีพี</h3>
+            <p>เกาะกลางทะเลที่มีธรรมชาติที่งดงาม ทั้งหาดทรายขาวและน้ำทะเลใส</p>
+            <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+        </div>
+        <div class="card">
+          <img src="img/KohLipe.jpg" alt="เกาะหลีเป๊ะ">
+          <h3>เกาะหลีเป๊ะ</h3>
+          <p>สวรรค์ของนักท่องเที่ยวที่ชื่นชอบการดำน้ำ และความเงียบสงบ</p>
+          <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+      </div>
+      </div>
+  </div>
+
+  <h3><center>แนะนำสถานที่ท่องเที่ยวเพิ่มเติม</center></h3>
+
+    <div class="col-md-6"></div>
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Koh Samet</strong>
+          <h3 class="mb-0">เกาะเสม็ด</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <p class="card-text mb-auto">เกาะยอดนิยมที่สามารถเดินทางได้ง่ายจากกรุงเทพฯ</p>
+          <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        <img src="img/KohSamet.jpg" alt="" height="250px">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6"></div>
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Koh Tao</strong>
+          <h3 class="mb-0">เกาะเต่า</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <p class="card-text mb-auto">เกาะที่มีชื่อเสียงในการดำน้ำลึก ทั้งนักดำน้ำมือใหม่และมืออาชีพ</p>
+          <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        <img src="img/KohTao.jpg" alt="Koh Tao" height="250px">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6"></div>
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary-emphasis">Koh Phangan</strong>
+        <h3 class="mb-0">เกาะพะงัน</h3>
+        <div class="mb-1 text-body-secondary"></div>
+        <p class="card-text mb-auto">หนึ่งในเกาะยอดนิยมที่สุด มีชายหาดสวยงามและบริการท่องเที่ยวครบครัน</p>
+        <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+      <img src="img/KohPhangan.jpg" alt="" height="250px">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6"></div>
+  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static">
+      <strong class="d-inline-block mb-2 text-primary-emphasis">Phuket</strong>
+      <h3 class="mb-0">ภูเก็ต</h3>
+      <div class="mb-1 text-body-secondary"></div>
+      <p class="card-text mb-auto"> แหล่งท่องเที่ยวระดับโลกที่มีทั้งชายหาดสวยงามและสถานบันเทิงครบครัน</p>
+      <a href="Sea.html" class="icon-link gap-1 icon-link-hover stretched-link">ดูเพิ่มเติม</a>
+    </div>
+    <div class="col-auto d-none d-lg-block">
+    <img src="img/Phuket.jpg" alt="" height="250px">
+    </div>
+  </div>
+  </div>
+
+    <!--ส่วนท้าย-->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-body-secondary">© 2024</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="Sea.html" class="nav-link p-0 text-body-secondary">Sea</a></li>
+              <li class="nav-item mb-2"><a href="plan.html" class="nav-link p-0 text-body-secondary">วางแพลน</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="aboutMe.html" class="nav-link p-0 text-body-secondary">ติดต่อเรา</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <!--จบส่วนท้าย-->
+</body>
+</html>

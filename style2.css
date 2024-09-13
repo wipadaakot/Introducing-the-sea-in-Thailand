@@ -1,0 +1,29 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+}
+
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+}
